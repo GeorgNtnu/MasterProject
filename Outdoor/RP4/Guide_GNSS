@@ -1,0 +1,14 @@
+Start the GNSS sampling:
+
+cd /loggers
+	May need to also do this: chmod +x ./ublox.sh
+bash log_master.sh
+	To stopp press CTRL + C
+
+To parse/view the GNSS samples:
+cd /parsers	
+
+To view data in terminal:  
+python3 ublox_parser.py /home/gmelk/data/flight_XYZ/ublox_000.ubx
+To save in file:
+python3 ublox_parser.py /home/gmelk/data/flight_XYZ/ublox_000.ubx >  PosData.txt
